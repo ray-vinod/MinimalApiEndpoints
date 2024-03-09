@@ -10,7 +10,8 @@ public static class EndpointExtensions
     {
         var assembly = Assembly.GetExecutingAssembly();
         var endpointTypes = assembly.GetTypes()
-            .Where(t => typeof(IEndpoint).IsAssignableFrom(t) && !t.IsInterface);
+            .Where(t => typeof(IEndpoint).IsAssignableFrom(t) && !t.IsInterface)
+            .Select(Activator.CreateInstance).Cast<IEndpoint>();
 
         foreach (var type in endpointTypes)
         {
@@ -23,7 +24,7 @@ public static class EndpointExtensions
         var endpoints = app.Services.GetServices<IEndpoint>();
         foreach (var endpoint in endpoints)
         {
-            endpoint.DefineEndpoints(app);
+            endpoint.Endpoints(app);
         }
     }
 }

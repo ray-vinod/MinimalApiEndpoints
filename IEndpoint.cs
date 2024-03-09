@@ -4,5 +4,5 @@ namespace MinimalApiEndpoints;
 
 public interface IEndpoint
 {
-    void DefineEndpoints(WebApplication app);
+    void Endpoints(WebApplication app);
 }
