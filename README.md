@@ -7,19 +7,13 @@
 > In Program.cs
 
 ```code
-var builder = WebApplication.CreateBuilder(args);
-{
-    ...others code ...
-
-    builder.Services.AddEndpoints();
-}
 var app = builder.Build();
 {
     ... others code...
 
     app.UseEndpoints();
 
-    app.Run();
+    ... others code...
 }
 ```
 

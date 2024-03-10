@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Routing;
 
 namespace MinimalApiEndpoints;
 
 public interface IEndpoint
 {
-    void Endpoints(WebApplication app);
+    void Endpoints(IEndpointRouteBuilder app);
 }
