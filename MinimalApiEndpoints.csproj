@@ -8,7 +8,7 @@
     <Version>1.1.0</Version>
     <Authors>ray-vinod</Authors>
     <Company>Self</Company>
-    <Description>It is a minimal api endpoints collector and setter</Description>
+    <Description>It's helps to register all endpoints of project and keep `Program.cs` clean.</Description>
     <PackageTags>MinimalApiEndpoints</PackageTags>
     <PackageProjectUrl>https://github.com/ray-vinod/MinimalApiEndpoints</PackageProjectUrl>
     <License>MIT</License>
