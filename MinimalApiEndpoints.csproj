@@ -5,11 +5,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageId>MinimalApiEndpoints </PackageId>
-    <Version>2.0.0</Version>
+    <Version>2.0.1</Version>
     <Authors>ray-vinod</Authors>
     <Company>Self</Company>
-    <Description>It helps to register all endpoints of project and keep `Program.cs` clean.</Description>
-    <PackageTags>MinimalApiEndpoints</PackageTags>
+    <Description>It helps to register all endpoints of project and keep Program.cs clean.</Description>
+    <PackageTags>MinimalApiEndpoints;Minimal Api Endpoints;Minimal;Api;Endpoints;Minimal Api;Register Endpoints;</PackageTags>
     <PackageProjectUrl>https://github.com/ray-vinod/MinimalApiEndpoints</PackageProjectUrl>
     <License>MIT</License>
   </PropertyGroup>
