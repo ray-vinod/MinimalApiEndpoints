@@ -1,8 +1,8 @@
 namespace Extentions.Common;
 
-public class Scanner
+public class Domain
 {
-    public static IEnumerable<TInterface> Assemblies<TInterface>()
+    public static IEnumerable<TInterface> Scan<TInterface>()
     {
         var serviceEndpoints = AppDomain.CurrentDomain
             .GetAssemblies()

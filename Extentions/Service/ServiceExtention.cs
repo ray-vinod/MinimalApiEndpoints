@@ -7,9 +7,9 @@ namespace Extentions.Service;
 
 public static class ServiceExtention
 {
-    public static IServiceCollection AddService(this IServiceCollection services)
+    public static IServiceCollection AddServices(this IServiceCollection services)
     {
-        foreach (var serviceInstance in Scanner.Assemblies<IService>())
+        foreach (var serviceInstance in Domain.Scan<IService>())
         {
             serviceInstance.Services(services);
         }

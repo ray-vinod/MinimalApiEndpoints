@@ -1,34 +1,15 @@
 using Extentions.Common;
-using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Routing;
 
 namespace Extentions.Endpoint;
 
 public static class EndpointExtention
 {
-    public static WebApplication UseEndpoints(this WebApplication app)
+    public static void UseEndpoints(this IEndpointRouteBuilder app)
     {
-        foreach (var endpointInstance in Scanner.Assemblies<IEndpoint>())
+        foreach (var endpointInstance in Domain.Scan<IEndpoint>())
         {
             endpointInstance.Endpoints(app);
         }
-
-        return app;
-    }
-
-    // Channing Extentions
-
-    public static WebApplication UseSwaggerAuth(this WebApplication app)
-    {
-        app.UseSwagger();
-        app.UseSwaggerUI();
-
-        return app;
-    }
-
-    public static WebApplication UseCorsPolicy(this WebApplication app, string policyName)
-    {
-        app.UseCors(policyName);
-
-        return app;
     }
 }
