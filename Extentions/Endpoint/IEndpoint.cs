@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Routing;
 
-namespace Extentions.Endpoint;
+namespace MinimalApiEndpoints;
 
 public interface IEndpoint
 {

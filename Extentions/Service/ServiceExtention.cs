@@ -1,9 +1,8 @@
-using Extentions.Common;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace Extentions.Service;
+namespace MinimalApiEndpoints;
 
 public static class ServiceExtention
 {
