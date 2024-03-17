@@ -9,7 +9,7 @@
     <Authors>ray-vinod</Authors>
     <Company>Self</Company>
     <Description>It helps to register all endpoints of project and keep Program.cs clean.</Description>
-    <PackageTags>MinimalApiEndpoints;Minimal Api Endpoints;Minimal;Api;Endpoints;Minimal Api;Register Endpoints;</PackageTags>
+    <PackageTags>MinimalApiEndpoints;Minimal;Api;Endpoints;Register Endpoints;AspNetCore;WebApi</PackageTags>
     <PackageProjectUrl>https://github.com/ray-vinod/MinimalApiEndpoints</PackageProjectUrl>
     <License>MIT</License>
   </PropertyGroup>
