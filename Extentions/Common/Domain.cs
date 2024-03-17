@@ -1,4 +1,4 @@
-namespace Extentions.Common;
+namespace MinimalApiEndpoints;
 
 public class Domain
 {

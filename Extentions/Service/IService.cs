@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Extentions.Service;
+namespace MinimalApiEndpoints;
 
 public interface IService
 {

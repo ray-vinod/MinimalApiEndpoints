@@ -1,7 +1,6 @@
-using Extentions.Common;
 using Microsoft.AspNetCore.Routing;
 
-namespace Extentions.Endpoint;
+namespace MinimalApiEndpoints;
 
 public static class EndpointExtention
 {
