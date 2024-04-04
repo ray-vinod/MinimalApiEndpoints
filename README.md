@@ -1,6 +1,6 @@
 # Minimal Api Endpoints
 
-> This is a simple minimal api endpoints registering package for .NET Minimal api project
+> This is a simple minimal api endpoints and services registering package for .NET Minimal api project
 
 ## How to use this
 
@@ -94,7 +94,7 @@ public class Student : IEndpoint
 ```
 
 ```code
-public class Student : IEndpoint
+public class Student : IEndpoint, IService
 {
     public void Endpoints(WebApplication app)
     {
@@ -109,10 +109,28 @@ public class Student : IEndpoint
         }));
     }
 
-
     public void Services(IServiceCollection services)
     {
         services.AddScoped<ISystemDateTime,SystemDateTime>();
+    }
+}
+```
+
+## New Feature
+
+### Example for reading appsettings.json file
+
+```code
+public class DatabaseRegisterService(IConfiguration configuration) : IService
+{
+    private readonly IConfiguration _configuration = configuration;
+
+    public void Services(IServiceCollection services)
+    {
+        service.Configure<JwtConfig>(_configuration.GetSection("JwtSettings"));
+
+        services.AddDbContex<YourDbContext>(options=>
+            options.UseSqlite(_configuration.GetConnectionString("ConnectionName")));
     }
 }
 ```
