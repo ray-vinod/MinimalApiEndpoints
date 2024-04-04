@@ -1,6 +1,6 @@
 # Minimal Api Endpoints
 
-> This is a simple minimal api endpoints registering package for .NET Minimal api project
+> This is a simple minimal api endpoints and services registering package for .NET Minimal api project
 
 ## How to use this
 
