@@ -4,7 +4,7 @@ using Swashbuckle.AspNetCore.Filters;
 
 namespace MinimalApiEndpoints;
 
-public static class ServiceExtention
+public static class ServiceExtension
 {
     public static IServiceCollection AddServices(this IServiceCollection services)
     {
@@ -16,7 +16,7 @@ public static class ServiceExtention
         return services;
     }
 
-    // Channing Extentions
+    // Chaining Extensions
     public static IServiceCollection AddSwaggerAuth(this IServiceCollection services, string title, string version)
     {
         services.AddSwaggerGen(options =>

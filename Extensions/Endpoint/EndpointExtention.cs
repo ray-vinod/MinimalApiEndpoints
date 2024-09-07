@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Builder;
 
 namespace MinimalApiEndpoints;
 
-public static class EndpointExtention
+public static class EndpointExtension
 {
     public static WebApplication UseEndpoints(this WebApplication app)
     {

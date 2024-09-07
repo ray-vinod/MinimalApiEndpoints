@@ -28,7 +28,7 @@ var app = builder.Build();
 }
 ```
 
-> for swaggerGen and cors complete with method channing
+> for swaggerGen and cors complete with method chaining
 
 ```code
 var builder = WebApplication.CreateBuilder(args);
